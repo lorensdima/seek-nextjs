@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { Button } from "@radix-ui/themes";
 
-export function ThemeSwitch({ className }: { className?: string }) {
+export function ThemeSwitch() {
    const [mounted, setMounted] = useState(false);
    const { theme, setTheme } = useTheme();
 
@@ -16,7 +16,7 @@ export function ThemeSwitch({ className }: { className?: string }) {
    if (!mounted) return null;
 
    return (
-      <div className={className}>
+      <div className="p-1">
          {theme == "dark" ? (
             <Button onClick={() => setTheme("light")}>
                {" "}

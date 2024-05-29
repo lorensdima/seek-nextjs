@@ -15,7 +15,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
    };
 
    return (
-      <div className="flex items-center">
+      <div className="flex items-center p-5">
          <form onSubmit={handleSearch} className="flex w-full">
             <Box maxWidth="300px">
                <TextField.Root placeholder="Search the docs…" size="3">

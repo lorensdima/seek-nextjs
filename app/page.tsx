@@ -6,8 +6,15 @@ import { Flex, Text, Button } from "@radix-ui/themes";
 export default function Home() {
    return (
       <main>
-         <Flex class="mx-auto">
-            <ThemeSwitch />
+         <ThemeSwitch />
+         <Flex
+            style={{
+               display: "flex",
+               justifyContent: "center",
+               alignItems: "center",
+               minHeight: "100vh",
+            }}
+         >
             <SearchBar
                onSearch={function (query: string): void {
                   throw new Error("Function not implemented.");
