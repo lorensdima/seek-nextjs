@@ -16,7 +16,7 @@ export function ThemeSwitch() {
    if (!mounted) return null;
 
    return (
-      <div className="p-1">
+      <div>
          {theme == "dark" ? (
             <Button onClick={() => setTheme("light")}>
                {" "}
