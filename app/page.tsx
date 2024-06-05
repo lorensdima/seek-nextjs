@@ -15,11 +15,7 @@ export default function Home() {
                minHeight: "100vh",
             }}
          >
-            <SearchBar
-               onSearch={function (query: string): void {
-                  throw new Error("Function not implemented.");
-               }}
-            />
+            <SearchBar />
          </Flex>
       </main>
    );
